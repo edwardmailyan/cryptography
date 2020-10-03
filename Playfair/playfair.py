@@ -14,10 +14,10 @@ def main():
 
     pt = playfair_decode(ct, keytable)
     print(pt)
+    print()
 
     pt = playfair_encode(encrypt_msg, keytable)
-    print(pt)
-    print(playfair_decode(pt, keytable))
+    print(pt, '->', playfair_decode(pt, keytable))
 
 
 def playfair_decode(ct, keytable):
