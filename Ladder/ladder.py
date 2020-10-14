@@ -3,7 +3,7 @@ from textwrap import wrap
 fraze = 'ВЩИТЗЬВЬЛОНЕНИУШИЗЕГАЕТСЮЕНОЙОСВЕПТПЫВЗШТРРОБОПАЕАОМНЛОЛОТМРЯЯЕЬЛОЛЕНА'
 
 arr = []
-for i in range(5, round(len(fraze)/2)):
+for i in range(5, round(len(fraze) / 2)):
     arr.append(wrap(fraze, i))
 
 for el in arr:
