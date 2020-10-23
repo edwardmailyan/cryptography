@@ -77,5 +77,8 @@ def encode_image(text_to_encode, template_image="image/default_image.jpg"):
 
 
 if __name__ == '__main__':
-    encode_image("Here is something you don't know")
+    text = '''If we'd go again All the way from the start I would try to change The things that killed our love Your 
+    pride has built a wall, so strong That I can't get through Is there really no chance To start once again I'm 
+    still loving you '''
+    encode_image(text)
     decode_image()
