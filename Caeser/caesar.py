@@ -69,7 +69,7 @@ for i in range(len(blst)):
 
 print()
 
-print(encryptCaesar(encrypt_msg, shift=6))
+print(encryptCaesar(encrypt_msg, shift=16))
 
 a = encryptGronsfeld(encrypt_msg, key)
 

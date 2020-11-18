@@ -12,6 +12,7 @@ def main():
     ct = 'КЛКЕПЕШОБКЕРЭЛЧСКУЛЮЕТВМВКИММЮЗОТЖША'
     encrypt_msg = 'КОД ПЛЕЙФЕЙЕРА ОСНОВАН НА ИСПОЛЬЗОВАНИИ МАТРИЦЫ БУКВ'
 
+    # print(encrypt_msg, '->', playfair_encode(encrypt_msg, keytable))
     pt = playfair_decode(ct, keytable)
     print(pt)
     print()
