@@ -2,7 +2,6 @@ from textwrap import wrap
 import numpy as np
 from itertools import chain
 
-
 key = np.array([['_', 'X', '_', '_', '_', '_', '_', '_', '_', '_'],
                 ['X', '_', '_', '_', 'X', '_', 'X', 'X', '_', '_'],
                 ['_', 'X', '_', '_', '_', 'X', '_', '_', '_', 'X'],
@@ -48,16 +47,29 @@ def decrypt(msg, key):
 
         if i == 0:
             temp_key = np.flip(key, axis=None)
+            print_grid(temp_key)
         elif i == 1:
             temp_key = np.flip(key, axis=0)
+            print_grid(temp_key)
         else:
             temp_key = np.flip(key, axis=1)
+            print_grid(temp_key)
 
     return text
 
 
+def print_grid(key):
+    for el in key:
+        print(' '.join(el))
+    print()
+
+
+print()
+
 msg = encrypt(text, key)
 
+print('Исходный текст:')
 print(msg)
-
+print()
+print('Процесс дешифрации и вывод сообщения:\n')
 print(decrypt(msg, key))
